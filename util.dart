@@ -18,3 +18,11 @@ bool isPrime(int n) {
   }
   return true;
 }
+
+List<int> primesUpTo(int n) {
+  final list = [2];
+  for (int i = 3; i <= n; i += 2) {
+    if (isPrime(i)) list.add(i);
+  }
+  return list;
+}
